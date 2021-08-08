@@ -43,14 +43,6 @@ ORDER BY rt.emp_no, rt.from_date DESC;
 
 -  Next we were able to summarize the data by the retiring titles.
 
-count	title
-29415	Senior Engineer
-28255	Senior Staff
-14221	Engineer
-12242	Staff
-4502	Technique Leader
-1761	Assistant Engineer
-2	Manager
 ![image](https://user-images.githubusercontent.com/85971908/128618794-79f4b330-a52e-4741-ada1-6bcc2f04f464.png)
 
 
