@@ -136,3 +136,4 @@ ORDER BY COUNT(rd.dept_name) DESC;
 
 ![image](https://user-images.githubusercontent.com/85971908/128645670-2c31a0af-e025-4719-952d-62599c94005e.png)
 
+![retiring_dept.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/retiring_dept.csv)
