@@ -27,9 +27,9 @@ ORDER BY e.emp_no;
 
 SELECT * FROM retirement_titles;
 
-![unique_titles.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/unique_titles.csv)****
+![retirement_titles.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/retirement_titles.csv)****
 
-- When verifying the data output we notice that employees have moved up in the company and had held multiple positions in the company so we used this code to get their most recent postions within Pwelett-Hackard
+- When verifying the data output we notice that employees have moved up in the company and had held multiple positions in the company so we used this code to get their most recent postions within Pwelett-Hackard.  This removed any duplicate entries for our summary of the data.
 
 -- Use Dictinct with Orderby to remove duplicate rows
 SELECT DISTINCT ON (rt.emp_no) rt.emp_no,
@@ -44,6 +44,7 @@ SELECT * FROM unique_titles;
 
 ![unique_titles.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/unique_titles.csv)
 
+-  Next we were able to summarize the data by the retiring titles.
 
 
 
@@ -57,4 +58,4 @@ SELECT * FROM unique_titles;
 
 
 
-![unique_titles.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/unique_titles.csv)
+
