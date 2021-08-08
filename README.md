@@ -8,7 +8,7 @@
 
 - We started with an Entity Relationship Diagram (ERD) to establish how all the data was connect and how we will reference the data between tables.
 
-[EmployeeDB.png](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png)
+![EmployeeDB.png](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png)
 
 
 
@@ -27,4 +27,4 @@
 
 
 
-[unique_titles.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/unique_titles.csv)
+![unique_titles.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/unique_titles.csv)
