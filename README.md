@@ -88,6 +88,8 @@ ORDER BY e.birth_date ASC
 **Summary**
 ------------------------------------------
 
+- How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+From our results we can use the "Retiring Titles" table to see how many employees will be retiring by title.
 
-
+![image](https://user-images.githubusercontent.com/85971908/128618794-79f4b330-a52e-4741-ada1-6bcc2f04f464.png)
 
