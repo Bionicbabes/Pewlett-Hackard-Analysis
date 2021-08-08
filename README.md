@@ -96,6 +96,20 @@ From our results we can use the "Retiring Titles" table to see how many employee
 
 The dates given for the retirement age was January 1, 1952 and December 31, 1955.  This is a 3 year window and we may not consider people in the latter years to be quite as ready to retire as the earlier years.  As the silver tsumani BEGINS i would refine my query to only include those people with a birth in 1952.  We can do this by refactoring the code that we already have.
 
+SELECT e.emp_no,
+	e.first_name,
+	e.last_name,
+	t.title,
+	t.from_date,
+	t.to_date,
+	e.birth_date
+INTO retirement_titles_52
+FROM employees as e
+INNER JOIN titles as t 
+ON e.emp_no = t.emp_no
+WHERE (e.birth_date BETWEEN '1952-01-01' AND '1952-12-31')
+ORDER BY e.birth_date DESC;
+
 ![image](https://user-images.githubusercontent.com/85971908/128645132-e141a447-7454-4935-9be2-eca57cacef5f.png)
 
 ![retiring_titles_52.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles_52.csv)
