@@ -116,3 +116,22 @@ ORDER BY e.birth_date DESC;
 
 - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 To answer this question we will use our ERD to see how we can take our "Retiring Titles" table and see which departments all the individual are currently working in.  
+
+SELECT ut.emp_no,
+	ut.first_name,
+	ut.last_name,
+	di.dept_name
+INTO retirement_dept
+FROM unique_titles as ut
+INNER JOIN dept_info as di 
+ON ut.emp_no = di.emp_no;
+
+SELECT COUNT(rd.dept_name), 
+	rd.dept_name
+INTO retiring_dept
+FROM retirement_dept as rd
+GROUP BY rd.dept_name
+ORDER BY COUNT(rd.dept_name) DESC;
+
+![image](https://user-images.githubusercontent.com/85971908/128645670-2c31a0af-e025-4719-952d-62599c94005e.png)
+
