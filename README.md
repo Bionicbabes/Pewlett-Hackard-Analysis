@@ -68,7 +68,7 @@ ORDER BY COUNT(ut.title) DESC;
 
 - Create a "Mentorship-Eligibility" table that holds the current employees who were born between January 1, 1965 and December 31, 1965.  Pwelett-Hackard wants to get all the tribal knowledge from the retiring employess and would like them to start mentoring the up and coming stars of the company.  Below is the query for the table created 
 
- SELECT e.emp_no,
+SELECT e.emp_no,
 	e.first_name,
 	e.last_name,
 	e.birth_date,
@@ -89,7 +89,9 @@ ORDER BY e.birth_date ASC
 ------------------------------------------
 
 - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+
 From our results we can use the "Retiring Titles" table to see how many employees will be retiring by title.
 
 ![image](https://user-images.githubusercontent.com/85971908/128618794-79f4b330-a52e-4741-ada1-6bcc2f04f464.png)
 
+The dates given for the retirement age was January 1, 1952 and December 31, 1955.  This is a 3 year window and we may not consider people in the latter years to be quite as ready to retire as the earlier years.  As the silver tsumani BEGINS i would refine my query to only include those people with a birth in 1952.  We can do this by refactoring the code that we already have.
