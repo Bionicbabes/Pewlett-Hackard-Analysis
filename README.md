@@ -25,7 +25,6 @@ ON e.emp_no = t.emp_no
 WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 ORDER BY e.emp_no;
 
-SELECT * FROM retirement_titles;
 
 ![retirement_titles.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/retirement_titles.csv)****
 
@@ -39,12 +38,20 @@ INTO unique_titles
 FROM retirement_titles as rt
 ORDER BY rt.emp_no, rt.from_date DESC;
 
-SELECT * FROM unique_titles;
 
 ![unique_titles.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/unique_titles.csv)
 
 -  Next we were able to summarize the data by the retiring titles.
 
+count	title
+29415	Senior Engineer
+28255	Senior Staff
+14221	Engineer
+12242	Staff
+4502	Technique Leader
+1761	Assistant Engineer
+2	Manager
+![image](https://user-images.githubusercontent.com/85971908/128618794-79f4b330-a52e-4741-ada1-6bcc2f04f464.png)
 
 
 ![retiring_titles.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles.csv)
