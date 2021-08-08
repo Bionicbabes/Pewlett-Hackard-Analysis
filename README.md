@@ -31,7 +31,6 @@ SELECT * FROM retirement_titles;
 
 - When verifying the data output we notice that employees have moved up in the company and had held multiple positions in the company so we used this code to get their most recent postions within Pwelett-Hackard.  This removed any duplicate entries for our summary of the data.
 
--- Use Dictinct with Orderby to remove duplicate rows
 SELECT DISTINCT ON (rt.emp_no) rt.emp_no,
 	rt.first_name,
 	rt.last_name,
@@ -48,7 +47,7 @@ SELECT * FROM unique_titles;
 
 
 
-
+![retiring_titles.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles.csv)
 
 
 
