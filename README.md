@@ -115,6 +115,7 @@ ORDER BY e.birth_date DESC;
 ![retiring_titles_52.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles_52.csv)
 
 - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+
 To answer this question we will use our ERD to see how we can take our "Retiring Titles" table and see which departments all the individual are currently working in.  There seems to be a good distribution of qualified people that are close to retirement that are able to metor the younger generation in each department. 
 
 SELECT ut.emp_no,
