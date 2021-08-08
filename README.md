@@ -113,3 +113,6 @@ ORDER BY e.birth_date DESC;
 ![image](https://user-images.githubusercontent.com/85971908/128645132-e141a447-7454-4935-9be2-eca57cacef5f.png)
 
 ![retiring_titles_52.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles_52.csv)
+
+- Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+To answer this question we will use our ERD to see how we can take our "Retiring Titles" table and see which departments all the individual are currently working in.  
