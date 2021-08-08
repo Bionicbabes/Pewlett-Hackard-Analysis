@@ -41,10 +41,16 @@ ORDER BY rt.emp_no, rt.from_date DESC;
 
 ![unique_titles.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/unique_titles.csv)
 
--  Next we were able to summarize the data by the retiring titles.
+-  Next we were able to summarize the data by the retiring titles using the query below.
+
+SELECT COUNT(ut.title), 
+	ut.title
+INTO retiring_titles
+FROM unique_titles as ut
+GROUP BY ut.title
+ORDER BY COUNT(ut.title) DESC;
 
 ![image](https://user-images.githubusercontent.com/85971908/128618794-79f4b330-a52e-4741-ada1-6bcc2f04f464.png)
-
 
 ![retiring_titles.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles.csv)
 
