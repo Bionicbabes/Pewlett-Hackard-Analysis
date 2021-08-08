@@ -1,6 +1,14 @@
 # Pewlett-Hackard-Analysis
 ---------------------------------
 
+**Overview of the analysis**
+------------------------------------------
+
+- Determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. Then, you’ll write a report that summarizes your analysis and helps prepare Bobby’s manager for the “silver tsunami” as many current employees reach retirement age.
+
+**Results**
+------------------------------------------
+
 **The Number of Retiring Employees by Title**
 ------------------------------------------
 
@@ -26,7 +34,7 @@ WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 ORDER BY e.emp_no;
 
 
-![retirement_titles.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/retirement_titles.csv)****
+![retirement_titles.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/retirement_titles.csv)
 
 - When verifying the data output we notice that employees have moved up in the company and had held multiple positions in the company so we used this code to get their most recent postions within Pwelett-Hackard.  This removed any duplicate entries for our summary of the data.
 
@@ -55,10 +63,30 @@ ORDER BY COUNT(ut.title) DESC;
 ![retiring_titles.csv](https://github.com/Bionicbabes/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles.csv)
 
 
+**The Employees Eligible for the Mentorship Program**
+------------------------------------------
 
+- Create a "Mentorship-Eligibility" table that holds the current employees who were born between January 1, 1965 and December 31, 1965.  Pwelett-Hackard wants to get all the tribal knowledge from the retiring employess and would like them to start mentoring the up and coming stars of the company.  Below is the query for the table created 
 
+ SELECT e.emp_no,
+	e.first_name,
+	e.last_name,
+	e.birth_date,
+	de.from_date,
+	de.to_date,
+	t.title
+INTO mentorship_eligibilty
+FROM employees as e
+INNER JOIN dept_emp AS de
+ON (e.emp_no = de.emp_no)
+INNER JOIN titles as t 
+ON e.emp_no = t.emp_no
+WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31') AND de.to_date = '9999-01-01'
+ORDER BY e.birth_date ASC
+; 
 
-
+**Summary**
+------------------------------------------
 
 
 
